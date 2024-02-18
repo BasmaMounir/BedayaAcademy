@@ -1,5 +1,6 @@
 import 'package:bedaya_academy/Introduction/intro_screen.dart';
-import 'package:bedaya_academy/SignUp/SignUpDetails.dart';
+import 'package:bedaya_academy/SignUp/CreateAccountScreen.dart';
+import 'package:bedaya_academy/SignUp/LogInDetails.dart';
 import 'package:bedaya_academy/SignUp/SignUpScreen.dart';
 import 'package:bedaya_academy/splash_screen.dart';
 import 'package:flutter/material.dart';
@@ -17,10 +18,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: SplashScreen.routeName,
       routes: {
-        SplashScreen.routeName: (_)=> SplashScreen(),
-        IntronScreen.routName:(_)=> IntronScreen(),
-        SignUpScreen.routeName:(_)=>SignUpScreen(),
-        SignUpDetails.routeName:(_)=>SignUpDetails(),
+        SplashScreen.routeName: (_) => SplashScreen(),
+        IntronScreen.routName: (_) => IntronScreen(),
+        SignUpScreen.routeName: (_) => SignUpScreen(),
+        LogInDetails.routeName: (_) => LogInDetails(),
+        CreateAccountScreen.routeName: (context) => CreateAccountScreen()
       },
     );
   }
